@@ -1,0 +1,6 @@
+<p>ようこそ <%= @user.name %> さん!</p>
+
+<p>ユーザー登録を再発行しました。</p>
+<p>下のリンクからユーザー登録を完了してください。</p>
+
+<p><%= link_to 'ユーザー登録を完了する', confirmation_user_url(@user, confirmation_token: @user.confirmation_token) %></p>

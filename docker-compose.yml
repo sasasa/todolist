@@ -1,0 +1,62 @@
+version: '3'
+services:
+  front: &front
+    build: ./vue
+    tty: true
+    stdin_open: true
+    command: yarn serve
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./vue:/app
+  # back:
+  #   <<: *front
+  #   command: yarn json
+  #   ports:
+  #     - "3000:3000"
+  # vue:
+  #   <<: *front
+  #   command: yarn serve
+  #   ports:
+  #     - "8080:8080"
+  db:
+    image: postgres
+    volumes:
+      - pgdatavol:/var/lib/postgresql/data
+  chrome:
+    image: selenium/standalone-chrome:3.141.59
+    ports:
+      - 4444:4444
+  back: &back
+    build: ./api
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./api:/myapp
+      - bundle:/usr/local/bundle
+    depends_on:
+      - db
+      - chrome
+  rails:
+    <<: *back
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    ports:
+      - "3000:3000"
+  delayed_job:
+    <<: *back
+    command: bundle exec rails jobs:work
+  # mysql:
+  #   # image: mariadb:latest
+  #   image: mysql:5.7
+  #   environment:
+  #     MYSQL_USER: root
+  #     MYSQL_ROOT_PASSWORD: password
+  #     MYSQL_ALLOW_EMPTY_PASSWORD: "yes" #パスワードなしにしたい場合はこれ
+  #   ports:
+  #     - '3306:3306'
+  #   volumes:
+  #     - "mariadb_data:/var/lib/mysql"
+volumes:
+  pgdatavol:
+  bundle:
+  # mariadb_data:

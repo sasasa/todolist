@@ -1,0 +1,5 @@
+ようこそ <%= @user.name %> さん!
+
+下のリンクからユーザー登録を完了してください。
+
+<%= link_to 'ユーザー登録を完了する', confirmation_user_url(@user, confirmation_token: @user.confirmation_token) %>

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login view template snapshot 1`] = `
+<div>
+  <h1>
+    ログイン
+  </h1>
+   
+  <form>
+    <div
+      class="formbox"
+      style="display: none;"
+    >
+      <span
+        class="error"
+      >
+        
+      </span>
+    </div>
+     
+    <div
+      class="formbox"
+    >
+      <label>
+        メール：
+        
+        <input
+          name="email"
+          placeholder="メール"
+          type="text"
+        />
+      </label>
+    </div>
+     
+    <div
+      class="formbox"
+    >
+      <label>
+        パスワード：
+        
+        <input
+          name="password"
+          placeholder="パスワード"
+          type="password"
+        />
+      </label>
+    </div>
+     
+    <div
+      class="formbox"
+    >
+      <button
+        class="btn-square"
+        type="submit"
+      >
+        ログイン
+      </button>
+    </div>
+     
+    <div
+      class="formbox"
+    >
+      <router-link-stub
+        event="click"
+        tag="a"
+        to="/send_email"
+      >
+        パスワードを再設定する
+      </router-link-stub>
+    </div>
+  </form>
+</div>
+`;

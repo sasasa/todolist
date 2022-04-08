@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Edit view template snapshot 1`] = `
+<div
+  class="edit"
+>
+  <h1>
+    Edit
+  </h1>
+   
+  <div>
+    <form-todo-stub
+      fm="[object Object]"
+      submitword="更新する"
+    />
+  </div>
+</div>
+`;

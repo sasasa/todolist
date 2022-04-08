@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add view template snapshot 1`] = `
+<div
+  class="add"
+>
+  <h1>
+    Add
+  </h1>
+   
+  <div>
+    <form-todo-stub
+      fm="[object Object]"
+      submitword="追加する"
+    />
+  </div>
+</div>
+`;

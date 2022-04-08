@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos view template snapshot 1`] = `
+<div
+  class="todos"
+>
+  <h1>
+    Todos
+  </h1>
+   
+  <tab-box-stub
+    fm="[object Object]"
+    notfinishedtodoscount="3"
+    todoscount="5"
+  />
+   
+  <span
+    tag="ul"
+  >
+    <li>
+      <todo-finish-box-stub
+        todo="[object Object]"
+      />
+       
+      <todo-stub
+        todo="[object Object]"
+      />
+       
+      <todo-delete-link-stub
+        todo="[object Object]"
+      />
+    </li>
+    <li>
+      <todo-finish-box-stub
+        todo="[object Object]"
+      />
+       
+      <todo-stub
+        todo="[object Object]"
+      />
+       
+      <todo-delete-link-stub
+        todo="[object Object]"
+      />
+    </li>
+    <li>
+      <todo-finish-box-stub
+        todo="[object Object]"
+      />
+       
+      <todo-stub
+        todo="[object Object]"
+      />
+       
+      <todo-delete-link-stub
+        todo="[object Object]"
+      />
+    </li>
+    <li>
+      <todo-finish-box-stub
+        todo="[object Object]"
+      />
+       
+      <todo-stub
+        todo="[object Object]"
+      />
+       
+      <todo-delete-link-stub
+        todo="[object Object]"
+      />
+    </li>
+    <li>
+      <todo-finish-box-stub
+        todo="[object Object]"
+      />
+       
+      <todo-stub
+        todo="[object Object]"
+      />
+       
+      <todo-delete-link-stub
+        todo="[object Object]"
+      />
+    </li>
+  </span>
+</div>
+`;

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signup view template snapshot 1`] = `
+<div>
+  <h1>
+    サインアップ
+  </h1>
+   
+  <form>
+    <div
+      class="formbox"
+    >
+      <label>
+        名前：
+        
+        <input
+          name="name"
+          placeholder="名前"
+          type="text"
+        />
+      </label>
+       
+      <span
+        class="error"
+        style="display: none;"
+      >
+        
+      </span>
+    </div>
+     
+    <div
+      class="formbox"
+    >
+      <label>
+        メール：
+        
+        <input
+          name="email"
+          placeholder="メール"
+          type="text"
+        />
+      </label>
+       
+      <span
+        class="error"
+        style="display: none;"
+      >
+        
+      </span>
+    </div>
+     
+    <div
+      class="formbox"
+    >
+      <label>
+        パスワード：
+        
+        <input
+          name="password"
+          placeholder="パスワード"
+          type="password"
+        />
+      </label>
+       
+      <span
+        class="error"
+        style="display: none;"
+      >
+        
+      </span>
+    </div>
+     
+    <div
+      class="formbox"
+    >
+      <button
+        class="btn-square"
+        type="submit"
+      >
+        登録
+      </button>
+    </div>
+  </form>
+</div>
+`;

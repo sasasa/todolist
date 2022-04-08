@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SendEmail view template snapshot 1`] = `
+<div>
+  <h1>
+    パスワード再設定:メール送信
+  </h1>
+   
+  <form>
+    <div
+      class="formbox message"
+      name="open"
+      style="display: none;"
+    >
+      
+        メールを送信しました。ご確認お願いします。
+      
+    </div>
+     
+    <div
+      class="formbox"
+    >
+      <label>
+        メール：
+        
+        <input
+          name="email"
+          placeholder="メール"
+          type="text"
+        />
+      </label>
+    </div>
+     
+    <div
+      class="formbox"
+    >
+      <button
+        class="btn-square"
+        type="submit"
+      >
+        メール送信
+      </button>
+    </div>
+  </form>
+</div>
+`;

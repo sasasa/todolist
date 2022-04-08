@@ -1,0 +1,17 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザ # view側： User.model_name.human => "ユーザ" / t("activerecord.models.user")と同じ
+      todo: Todo
+    attributes:
+      todo:
+        id: ID
+        content: 内容
+        finished: 終了
+        due_on: 期限
+        user_id: ユーザ
+      user:
+        id: ID
+        name: 名前 # view側： User.human_attribute_name :name => "名前" /　t("activerecord.attributes.user.name")と同じ
+        email: メールアドレス
+        password: パスワード

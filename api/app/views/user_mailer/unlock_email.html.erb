@@ -1,0 +1,5 @@
+<p>ようこそ <%= @user.name %> さん!</p>
+
+<p>下のリンクからロックを解除してください。</p>
+
+<p><%= link_to 'ロックを解除する', unlock_user_url(@user, unlock_token: @user.unlock_token) %></p>
